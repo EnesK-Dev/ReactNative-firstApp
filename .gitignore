@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Log dosyaları
+*.log
+
+# Build klasörleri
+android/build/
+ios/build/
