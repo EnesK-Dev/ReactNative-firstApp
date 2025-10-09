@@ -5,18 +5,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import Sign from './src/screens/Sign';
 import {createStaticNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
+import RootNavigation from './src/navigation/rootNavigation';
 
 const Stack = createNativeStackNavigator(); 
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown:false}}>
-        <Stack.Screen component={Login} name='Login'/>
-        <Stack.Screen component={Sign} name='Sign'/>
-      </Stack.Navigator>
-    </NavigationContainer>
+    <RootNavigation/>
     
   )
 }
